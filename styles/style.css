@@ -59,7 +59,7 @@ textarea {
   display: block;
   width: 60px;
   height: 2px;
-  background: #ef476f;
+  background: #ed2c59;
   margin: 10px auto;
 }
 
@@ -81,7 +81,7 @@ textarea {
 }
 
 #home .intro i:hover {
-  color: #ef476f;
+  color: #ed2c59;
 }
 
 #home .btn,
