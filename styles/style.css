@@ -366,6 +366,7 @@ input[type="submit"] {
   /* Introdução */
   #home {
     height: 100%;
+    padding: 0 40px;
   }
 
   #home img {
@@ -476,6 +477,6 @@ input[type="submit"] {
   }
 
   .footer .contact-info {
-    margin-bottom: 60px;
+    margin-bottom: 100px;
   }
 }
