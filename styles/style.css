@@ -199,23 +199,23 @@ footer h4 {
 }
 
 #about .about-and-skills .skills ul li .percent50 {
-  width: 150px;
+  width: 50%;
 }
 
 #about .about-and-skills .skills ul li .percent60 {
-  width: 180px;
+  width: 60%;
 }
 
 #about .about-and-skills .skills ul li .percent70 {
-  width: 210px;
+  width: 70%;
 }
 
 #about .about-and-skills .skills ul li .percent80 {
-  width: 240px;
+  width: 80%;
 }
 
 #about .about-and-skills .skills ul li .percent90 {
-  width: 270px;
+  width: 90%;
 }
 
 #about .about-and-skills .skills ul li .percent100 {
@@ -354,4 +354,128 @@ input[type="submit"] {
 }
 .footer .contact-info h3 {
   font-size: 14px;
+}
+
+@media only screen and (max-width: 600px) {
+  /* Header */
+  header {
+    justify-content: flex-end;
+    margin: 20px 50px;
+  }
+
+  /* Introdução */
+  #home {
+    height: 100%;
+  }
+
+  #home img {
+    max-width: 150px;
+  }
+
+  #home .intro p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  #home .intro i {
+    font-size: 25px;
+  }
+
+  #home .btn,
+  #home .btn i {
+    font-size: 12px;
+  }
+
+  #home .btn {
+    padding: 10px 30px;
+  }
+
+  /* About */
+  #about {
+    padding: 40px 0;
+  }
+  #about .about-content {
+    max-width: 100%;
+    margin: 0 20px;
+  }
+
+  #about h4,
+  #formation h4,
+  #experience h4,
+  footer h4 {
+    margin: 50px 0 20px 0;
+  }
+
+  #about .about-text p {
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+
+  #about .about-and-skills {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #about .about-and-skills .skills ul li .progress {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    max-width: 250px;
+  }
+
+  /* Formation and Certificates */
+  #formation,
+  #experience {
+    padding: 40px;
+  }
+
+  #formation h3,
+  #experience h3 {
+    margin: 10px 0;
+  }
+
+  #formation .formation-and-certificates div,
+  #experience .experiences div {
+    margin-bottom: 25px;
+  }
+
+  /* Footer */
+  footer {
+    padding-top: 60px;
+  }
+
+  footer .more,
+  footer .contact-info {
+    display: block;
+  }
+
+  .footer i {
+    font-size: 35px;
+  }
+
+  .footer h3 {
+    font-size: 14px;
+  }
+
+  .footer p {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .footer .contact {
+    margin: 60px auto;
+  }
+
+  .footer .contact form {
+    display: block;
+    padding: 0 40px;
+  }
+
+  input[type="submit"] {
+    margin-top: 30px !important;
+  }
+
+  .footer .contact-info {
+    margin-bottom: 60px;
+  }
 }
