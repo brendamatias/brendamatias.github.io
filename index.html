@@ -12,71 +12,75 @@
     <link rel='stylesheet' type='text/css' media='screen' href='./styles/solid.min.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='./styles/fontawesome.min.css'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700">
-    <script src='main.js'></script>
 </head>
 
 <body>
+    <header>
+        <img src="./assets/brl.png" onclick="languagePt();" alt="Brazilian">
+        <img src="./assets/usd.png" onclick="languageEn();" alt="English">
+    </header>
     <section id="home">
         <div class="intro">
             <img src="https://avatars2.githubusercontent.com/u/38896055?v=4" alt="Brenda Matias">
             <h1>Brenda Matias</h1>
-            <p>Hi, my name is Brenda Matias and I'm a front end developer. </p>
+            <p id="intro-p">Hi, my name is Brenda Matias and I'm a front end developer.</p>
             <ul>
                 <li>
-                    <a>
+                    <a href="https://github.com/brendamatias" target="_blank">
                         <i class="fab fa-github"></i>
                     </a>
                 </li>
                 <li>
-                    <a>
+                    <a href="https://www.linkedin.com/in/brenda-matias/" target="_blank">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
                 </li>
                 <li>
-                    <a>
+                    <a href="https://www.facebook.com/brendasobralmatias" target="_blank">
                         <i class="fab fa-facebook-f"></i>
                     </a>
                 </li>
             </ul>
-            <a class="btn" href="#about">KNOW MORE <i class="fas fa-arrow-down"></i></a>
+            <a id="btn-about" class="btn" href="#about">KNOW MORE <i class="fas fa-arrow-down"></i></a>
         </div>
     </section>
     <section id="about">
         <div class="about-content">
             <div class="about-text">
-                <h4>About</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                <h4 id="about-title">About</h4>
+                <p id="about-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    Ipsum has been the
                     industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
                     and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
             </div>
             <div class="about-and-skills">
                 <div>
-                    <h4>Profile</h4>
+                    <h4 id="profile-title">Profile</h4>
                     <ul class="profile">
                         <li>
-                            <strong>Nome</strong>
+                            <strong id="profile-name">Name</strong>
                             <span>Brenda Sobral Matias</span>
                         </li>
                         <li>
-                            <strong>Data de Nascimento</strong>
+                            <strong id="profile-birth">Date of Birth</strong>
                             <span>21/02/1998</span>
                         </li>
                         <li>
-                            <strong>E-mail</strong>
+                            <strong>Email</strong>
                             <span>brendamatias.sobral@gmail.com</span>
                         </li>
                         <li>
-                            <strong>Endereço</strong>
-                            <span>Rua Real da Torre, Madalena - Recife, PE</span>
+                            <strong id="profile-address">Address</strong>
+                            <span id="profile-address-text">Street Real da Torre, Madalena - Recife, PE</span>
                         </li>
                         <li>
-                            <strong>Telefone</strong>
+                            <strong id="profile-telefone">Telephone</strong>
                             <span>+55 (81) 99862-6092</span>
                         </li>
                     </ul>
                 </div>
                 <div class="skills">
-                    <h4>Skills</h4>
+                    <h4 id="skills-title">Skills</h4>
                     <ul>
                         <li>
                             <strong>HTML5</strong>
@@ -118,115 +122,122 @@
                 </div>
             </div>
             <div class="button">
-                <button type="button">Download My Resume</button>
+                <button id="btn-download" type="button">Download My Resume</button>
             </div>
         </div>
     </section>
     <section id="formation">
         <div class="formation-and-certificates">
-            <h4>Formation and Certificates</h4>
+            <h4 id="formation-title">Formation and Certificates</h4>
             <div>
                 <i class="fa fa-graduation-cap"></i>
-                <h3>College Maurício de Nassau - Computer Engineering</h3>
+                <h3 id="formation-1">College Maurício de Nassau - Computer Engineering</h3>
                 <p>Recife - PE | 02/2015 - 02/2020</p>
             </div>
             <div>
                 <i class="fa fa-graduation-cap"></i>
-                <h3>Alura Cursos Online - Certification Java</h3>
+                <h3 id="formation-2">Alura Online Courses - Certification Java</h3>
                 <p>04/2018</p>
             </div>
             <div>
                 <i class="fa fa-graduation-cap"></i>
-                <h3>Alura Cursos Online - Certification Ionic 3</h3>
+                <h3 id="formation-3">Alura Online Courses - Certification Ionic 3</h3>
                 <p>05/2018</p>
             </div>
             <div>
                 <i class="fa fa-graduation-cap"></i>
-                <h3>Alura Cursos Online - Certification React Native</h3>
+                <h3 id="formation-4">Alura Online Courses - Certification React Native</h3>
                 <p>05/2018</p>
             </div>
             <div>
                 <i class="fa fa-graduation-cap"></i>
-                <h3>Origamid - Certification Web Design</h3>
+                <h3 id="formation-5">Origamid - Certification Web Design</h3>
                 <p>07/2018</p>
             </div>
             <div>
                 <i class="fa fa-graduation-cap"></i>
-                <h3>Origamid - Certification Vue.js</h3>
+                <h3 id="formation-6">Origamid - Certification Vue.js</h3>
                 <p>08/2019</p>
             </div>
         </div>
     </section>
     <section id="experience">
         <div class="experiences">
-            <h4>Professional Experiences</h4>
+            <h4 id="experiences-title">Professional Experiences</h4>
             <div>
                 <i class="fa fa-briefcase"></i>
                 <h3>Raia Drogasil</h3>
                 <p>Recife | 03/17 - 12/17</p>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <p id="experiences-1">I worked as a cashier and assist in customer service as dispensing medications.
+                </p>
             </div>
             <div>
                 <i class="fa fa-briefcase"></i>
                 <h3>MV Sistemas</h3>
                 <p>Recife | 08/18 - 08/19</p>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <p id="experiences-2">I worked as developer of the International version of SoulMV using proprietary
+                    framework based Spring Boot, GitLab for versioning, Oracle for database and Java programming
+                    language.</p>
             </div>
             <div>
                 <i class="fa fa-briefcase"></i>
                 <h3>MK Tecnologia</h3>
                 <p>Recife | 08/18</p>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <p id="experiences-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             </div>
         </div>
     </section>
     <footer>
         <div class="footer">
-            <h4>More</h4>
+            <h4 id="more-title">More</h4>
             <div class="more">
                 <div>
                     <i class="fas fa-user-secret"></i>
-                    <h3>Personality</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <h3 id="personality">Personality</h3>
+                    <p id="personality-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
                 </div>
                 <div>
                     <i class="fas fa-code"></i>
-                    <h3>Interests</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <h3 id="interests">Interests</h3>
+                    <p id="interests-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
                 </div>
                 <div>
                     <i class="fa fa-briefcase"></i>
-                    <h3>Hobies</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <h3>Hobbies</h3>
+                    <p id="hobbies-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 </div>
             </div>
             <div class="contact">
-                <h4>Contact</h4>
-                <form id="contact" method="POST">
-                    <input type="text" name="name" placeholder="Your name.">
-                    <input type="text" name="email" placeholder="Your e-mail.">
-                    <textarea name="message" placeholder="Your message."></textarea>
-                    <input type="submit" value="Enviar">
+                <h4 id="form-title">Contact</h4>
+                <form action="https://formspree.io/brendamatias.sobral@gmail.com" id="contact" method="POST">
+                    <input id="form-name" type="text" name="name" placeholder="Your name." required>
+                    <input id="form-email" type="text" name="email" placeholder="Your e-mail." required>
+                    <textarea id="form-message" name="message" placeholder="Your message." required></textarea>
+                    <input id="form-submit" type="submit" value="Submit">
                 </form>
             </div>
             <div class="contact-info">
                 <div>
                     <i class="fa fa-briefcase"></i>
-                    <h3>To contact me</h3>
-                    <p>Street Real da Torre, Madalena - Recife, PE</p>
+                    <h3 id="contact-title1">To contact me</h3>
+                    <p id="contact-text1">Street Real da Torre, Madalena - Recife, PE</p>
                 </div>
                 <div>
                     <i class="fa fa-briefcase"></i>
-                    <h3>Send me an e-mail</h3>
+                    <h3 id="contact-title2">Send me an email</h3>
                     <p>brendamatias.sobral@gmail.com</p>
                 </div>
                 <div>
                     <i class="fa fa-briefcase"></i>
-                    <h3>Call me</h3>
+                    <h3 id="contact-title3">Call me</h3>
                     <p>+55 (81) 99862-6092</p>
                 </div>
             </div>
     </footer>
+    <script src="./js/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script src="./js/app.js"></script>
 </body>
 
 </html>
